@@ -1,0 +1,7 @@
+apps:
+  - name: forwardFinance
+    restart_delay: 100
+    script: npm run start:linux
+    autorestart: true
+    env:
+      NODE_ENV: development
